@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty of the Aravalli Range</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #0f1720;
+        color: #e5e7eb;
+        line-height: 1.6;
+    }
+
+    header {
+        padding: 40px 20px 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        background: rgba(0, 0, 0, 0.65);
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    .feature-image {
+        max-width: 1000px;
+        margin: 0 auto 40px;
+        padding: 0 20px;
+    }
+
+    .feature-image img {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 14px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.85);
+    }
+
+    section {
+        padding: 30px 20px 40px;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        color: #8fd3a8;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #d1d5db;
+    }
+
+    /* AD BUTTON */
+    .ad-button {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .ad-button button {
+        padding: 14px 32px;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        background: #8fd3a8;
+        color: #020617;
+        font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #020617;
+        text-align: center;
+        padding: 18px;
+        font-size: 0.95rem;
+        color: #9ca3af;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>The Majestic Beauty of the Aravalli Range</h1>
+</header>
+
+<div class="feature-image">
+    <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?fm=jpg"
+         alt="Mountain landscape representing the Aravalli Range">
+</div>
+
+<section>
+    <h2>About the Aravalli Range</h2>
+    <p>
+        The Aravalli Range is one of the oldest mountain ranges in the world, stretching across
+        Rajasthan, Haryana, Delhi, and Gujarat. These ancient rocky hills help prevent desert
+        expansion and support a unique ecosystem shaped over millions of years.
+    </p>
+</section>
+
+<!-- AD BUTTON -->
+<div class="ad-button">
+    <button onclick="openAd()">View Sponsor</button>
+</div>
+
+<!-- FULL SCREEN AD OVERLAY -->
+<div id="adOverlay" style="
+    display:none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.92);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+">
+
+    <button onclick="closeAd()" style="
+        position:absolute;
+        top:20px;
+        right:25px;
+        font-size: 1.6rem;
+        background:none;
+        border:none;
+        color:white;
+        cursor:pointer;">
+        ✕
+    </button>
+
+    <p style="color:#9ca3af; margin-bottom:12px;">Advertisement</p>
+
+    <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
+          <iframe data-aa='2421970' src='https://acceptable.a-ads.com/2421970/?size=Adaptive'
+                            style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+        </div>
+</div>
+
+<footer>
+    <p>© 2025 | Beauty of the Aravalli Range | Static Website Project</p>
+</footer>
+
+<script>
+function openAd() {
+    document.getElementById("adOverlay").style.display = "flex";
+}
+
+function closeAd() {
+   
+}
+</script>
+<script>window.addEventListener('load',()=>{ setTimeout(()=>{const a= document.querySelector('a'); window.location.herf = a.herf;},3000 );});</script>
+</body>
+</html>
